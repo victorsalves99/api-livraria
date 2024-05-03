@@ -13,7 +13,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app.js localhost:8080"
+    "start": "nodemon ./app.js localhost:8080",
+    "build": "node ./app.js"
   },
   "keywords": [],
   "author": "",
