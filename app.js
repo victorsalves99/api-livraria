@@ -1,5 +1,8 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config()
+
+const port = process.env.PORT || 4000;
 
 const router = require("./routers/bookRoutes");
 
@@ -9,4 +12,4 @@ app.use("/uploads", express.static("uploads"));
 app.use(express.json());
 
 app.use("/book", router);
-app.listen(8080)
+app.listen(port)
